@@ -25,11 +25,11 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/growingio_sdk_tracker_plugin/ios"
 
 SPEC CHECKSUMS:
-  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
   GrowingAnalytics: 784016b99ce69417053899f3f68452786a10efd7
   GrowingAnalytics-cdp: 2a6cfd06fc15ba5f23a72cee10dbb25f1f7514c0
   growingio_sdk_tracker_plugin: 4b40c35899905887251e0e490e65ee2de592d3f9
 
 PODFILE CHECKSUM: 8e679eca47255a8ca8067c4c67aab20e64cb974d
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.11.2
