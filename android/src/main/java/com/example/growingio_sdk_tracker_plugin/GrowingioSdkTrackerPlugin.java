@@ -38,6 +38,10 @@ public class GrowingioSdkTrackerPlugin implements FlutterPlugin, MethodCallHandl
       onCleanLoginUserId();
     } else if (call.method.equals("setLoginUserId")) {
       onSetLoginUserId(call);
+    }else if (call.method.equals("setDataCollectionEnabled")){
+      //打开埋点数据收集开关
+      boolean dataCollectionEnabled = (boolean) call.argument("dataCollectionEnabled");
+      GrowingTracker.get().setDataCollectionEnabled(dataCollectionEnabled);
     } else {
       result.notImplemented();
       return;

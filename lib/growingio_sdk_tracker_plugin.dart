@@ -17,7 +17,15 @@ class GrowingTracker {
       print('error :' + e.toString());
     }
   }
+  static Future<void> setDataCollectionEnabled(bool dataCollectionEnabled) async{
+    Map<String, dynamic> args = {"dataCollectionEnabled": dataCollectionEnabled};
 
+    try{
+      _channel.invokeMethod('setDataCollectionEnabled',args);
+    }catch(e){
+      print('error :' + e.toString());
+    }
+  }
   static Future<void> trackCustomEventItemKeyId(String? eventId, String? itemKey, String? itemId,
       {Map<String, String>? variable}) async {
     if (eventId == null || itemKey == null || itemId == null) return;
