@@ -36,7 +36,10 @@
         [[GrowingTracker sharedInstance] setLoginUserId:userId];
     } else if ([methodName isEqualToString:@"cleanLoginUserId"]) {
         [[GrowingTracker sharedInstance] cleanLoginUserId];
-    } else {
+    } else if ([methodName isEqualToString:@"setDataCollectionEnabled"]){
+        BOOL enabled = argDic[@"dataCollectionEnabled"];
+        [[GrowingTracker sharedInstance] setDataCollectionEnabled: enabled];
+    }else {
         return NO;
     }
     
